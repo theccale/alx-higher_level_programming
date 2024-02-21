@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """a class BaseGeometry (based on 6-base_geometry.py)."""
 
-class BaseGeometry;
+class BaseGeometry:
         """Represents BaseGeometry"""
         def area(self):
             """ it is still an empty class"""
@@ -17,7 +17,6 @@ class BaseGeometry;
 
             """
             if type(value) !=int:
-                raise TypeError("()must be an interger".format(name)
+                raise TypeError("{}must be an integer".format(name)
                                 if value <= 0
-                                raise ValueError(") must be greater than 0".format(name))
-
+                                raise ValueError("{} must be greater than 0".format(name))

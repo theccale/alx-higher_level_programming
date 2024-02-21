@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""function for last digit"""
 import random
 number = random.randint(-10000, 10000)
 if number < 0:

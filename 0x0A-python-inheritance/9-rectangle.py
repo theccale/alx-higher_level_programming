@@ -8,6 +8,19 @@ class Rectangle(BaseGeometry):
         """Foe every new rectangle
         Args:
         width (int): The width of the new Rectangle.
-
+        height (int): The height of the new Rectangle.
 
         """
+super().integer_validator("height", height)
+        self.__height = height
+super().integer_validator("width", width)
+        self.__width = width
+        def area(self):
+            """return the area of the rectangle based on the width and height received"""
+            return self.__width * self.__height
+
+        def __str__(self):
+            """ REturn the details of the new rectangle"""
+            string = "[" + str(self.__class__.__name__) + "] "
+            string += str(self.__width) + "/" + str (self.__height)
+            return string
